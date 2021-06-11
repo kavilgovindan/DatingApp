@@ -1,7 +1,8 @@
 <app-navbar></app-navbar>
 <div class="container" style="padding-top: 100px;">
-  <ul>
-    <li *ngFor="let user of Users">{{user.id}}-{{user.userName}}</li>
-  </ul>
+ <!-- <ul *ngIf="accountService.currentUser$ | async">
+    <li  *ngFor="let user of Users">{{user.id}}-{{user.userName}}</li>
+  </ul>-->
+  <app-home></app-home>
 </div>
 
